@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    int[] mang = { 1, 3, 5, 7, 9 };
+    var Chuoi = $"cac phan tu trong mang: {mang[0]} <br>" + $"{ string.Join(",", mang)}";
+    
+}
+
+<h1>Index</h1>
+trang index demo
+@{
+    var N = 9;
+    for (int i = 1; i<11; i++)
+    {
+        //cu phap razor
+        <div>@N x @i = @(N*i)  </div>
+    }
+
+ }
+@Chuoi
+<div>mang co @mang.Length phan tu </div>
+<div>@string.Join("; ", mang) </div>
